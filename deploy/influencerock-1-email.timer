@@ -1,0 +1,11 @@
+[Unit]
+Description=Send queued Influence Rock delegate emails every hour
+
+[Timer]
+OnCalendar=*-*-* *:00:00 Asia/Kolkata
+AccuracySec=1s
+Persistent=true
+Unit=influencerock-1-email.service
+
+[Install]
+WantedBy=timers.target

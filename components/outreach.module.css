@@ -1,0 +1,295 @@
+.directory {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.intro h2 {
+  font-family: inherit;
+  font-size: 30px;
+  letter-spacing: -0.7px;
+  scroll-margin-top: 130px;
+}
+.intro p {
+  color: #737b86;
+  margin-top: 8px;
+}
+.jump {
+  color: #a20d32;
+  font-size: 14px;
+}
+.search {
+  display: flex;
+  border: 1px solid #ccd0d5;
+  align-items: center;
+  padding: 12px 14px 12px 24px;
+  gap: 18px;
+}
+.search > span {
+  font-size: 36px;
+  color: #a20d32;
+}
+.search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 18px;
+  padding: 12px 0;
+}
+.search:focus-within {
+  outline: 2px solid #a20d32;
+  outline-offset: 3px;
+}
+.search button {
+  background: #a20d32;
+  color: white;
+  border: 0;
+  font: inherit;
+  padding: 15px 28px;
+  cursor: pointer;
+}
+.filters {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr auto;
+  gap: 24px;
+  align-items: end;
+  margin: 25px 0 34px;
+}
+.filters label {
+  font-size: 14px;
+  color: #737b86;
+  display: grid;
+  gap: 10px;
+}
+.filters select {
+  width: 100%;
+  background: #f8f8f8;
+  border: 1px solid #d9dce0;
+  padding: 16px;
+  font: inherit;
+  color: #242930;
+  min-width: 0;
+}
+.reset {
+  border: 0;
+  background: none;
+  color: #a20d32;
+  cursor: pointer;
+  padding: 18px 0;
+  font: inherit;
+  font-size: 14px;
+}
+.resultsBar {
+  border-bottom: 1px solid #d9dce0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 0 20px;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: #737b86;
+}
+.resultsBar p {
+  color: #242930;
+  font-weight: 600;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.card {
+  border: 1px solid #e0e2e5;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  min-width: 0;
+  transition: border-color 0.2s;
+}
+.card:hover {
+  border-color: #a20d32;
+}
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+.badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a20d32;
+  line-height: 1.5;
+}
+.region {
+  font-size: 12px;
+  color: #737b86;
+  text-align: right;
+  flex-shrink: 0;
+  max-width: 45%;
+}
+.card h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  margin: 0 0 12px;
+}
+.person {
+  font-size: 15px;
+  font-weight: 600;
+}
+.beat {
+  color: #737b86;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 8px 0 22px;
+  flex: 1;
+}
+.contact {
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+  display: grid;
+  gap: 7px;
+  margin-bottom: 22px;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+.contact > span {
+  font-size: 11px;
+  color: #737b86;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact > a {
+  color: #a20d32;
+}
+.source {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: #737b86;
+}
+.source a {
+  font-size: 12px;
+  color: #3a424d;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+.pagination button {
+  background: white;
+  border: 1px solid #ccd0d5;
+  padding: 13px 20px;
+  font: inherit;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.empty {
+  padding: 65px 20px;
+  text-align: center;
+  background: #f6f7f7;
+}
+.empty h3 {
+  font: 600 24px inherit;
+}
+.empty p {
+  margin: 15px 0 25px;
+  color: #737b86;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.directory button:focus-visible,
+.directory a:focus-visible,
+.directory select:focus-visible {
+  outline: 2px solid #a20d32;
+  outline-offset: 4px;
+}
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .filters {
+    gap: 16px;
+  }
+  .resultsBar {
+    flex-wrap: wrap;
+  }
+  .jump {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .directory {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .filters {
+    grid-template-columns: 1fr 1fr;
+  }
+  .filters label:first-child {
+    grid-column: 1/-1;
+  }
+  .search {
+    padding: 8px 8px 8px 14px;
+    gap: 8px;
+  }
+  .search input {
+    font-size: 14px;
+  }
+  .search button {
+    font-size: 13px;
+    padding: 13px;
+  }
+  .intro h2 {
+    font-size: 25px;
+  }
+  .intro p {
+    font-size: 14px;
+  }
+  .pagination {
+    gap: 12px;
+    font-size: 12px;
+  }
+  .pagination button {
+    padding: 12px;
+  }
+  .card {
+    padding: 23px;
+  }
+  .resultsBar {
+    font-size: 12px;
+  }
+}

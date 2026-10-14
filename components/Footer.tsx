@@ -1,20 +1,44 @@
+import Link from "next/link";
+import { PolicyButton } from "@/components/Policies";
 export function Footer() {
   return (
-    <footer className="site-footer">
-      <div className="container footer-main">
-        <a href="#top" className="wordmark">INFLUENCE ROCK</a>
-        <nav aria-label="Footer navigation">
-          <a href="#capabilities">What we do</a>
-          <a href="#network">Where we work</a>
-          <a href="#method">Our method</a>
-          <a href="#responsibility">About</a>
-          <a href="#consultation">Contact</a>
-        </nav>
-        <p>People. Places. Progress.</p>
-      </div>
-      <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} Influence Rock. All rights reserved.</span>
-        <span>Global strategic relations · Government affairs · Market entry</span>
+    <footer id="footer">
+      <div className={"container"}>
+        <div className={"footer-top"}>
+          <Link href={"/"} className={"brand"}>
+            <span className={"brand-mark"}>
+              {"IR"}
+              <span></span>
+            </span>
+            <span className={"brand-name"}>
+              {"INFLUENCE ROCK"}
+              <span>{"INTERNATIONAL RELATIONS"}</span>
+            </span>
+          </Link>
+          <div className={"footer-nav"}>
+            <Link href="/outreach">Press &amp; outreach</Link>
+            <Link href={"/expertise"} className={""}>
+              {"Expertise"}
+            </Link>
+            <Link href={"/network"} className={""}>
+              {"Our people"}
+            </Link>
+            <Link href={"/contact"} className={""}>
+              {"Contact"}
+            </Link>
+          </div>
+        </div>
+        <div className={"footer-bottom"}>
+          <span>{"© 2026 Influence Rock. All rights reserved."}</span>
+          <div>
+            <PolicyButton kind={"confidentiality"}>
+              {"Confidentiality"}
+            </PolicyButton>
+            <PolicyButton kind={"integrity"}>
+              {"Integrity & Terms"}
+            </PolicyButton>
+          </div>
+        </div>
       </div>
     </footer>
   );

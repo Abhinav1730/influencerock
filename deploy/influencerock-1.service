@@ -1,0 +1,24 @@
+[Unit]
+Description=Influence Rock 1 Next.js website
+After=network.target
+
+[Service]
+Type=simple
+User=influencerock-1
+Group=influencerock-1
+WorkingDirectory=/srv/influencerock-1-current
+Environment=NODE_ENV=production
+Environment=PORT=3182
+Environment=IR_DATA_DIR=/srv/influencerock-1/data
+ExecStart=/usr/bin/node /srv/influencerock-1-current/node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3182
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/influencerock-1/data /srv/influencerock-1-current/.next/cache
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

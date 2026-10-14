@@ -1,0 +1,8 @@
+@media (min-width: 901px) and (max-width: 1240px) {
+  .navigation.navigation {
+    display: none;
+  }
+  .menu.menu {
+    display: inline-flex;
+  }
+}

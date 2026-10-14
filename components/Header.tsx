@@ -1,47 +1,83 @@
 "use client";
-
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { ArrowRight, List, X } from "@phosphor-icons/react";
-
+import { Icon } from "./Icon";
+import outreachNav from "./outreach-nav.module.css";
+import { signOut } from "@/app/outreach/actions";
 const links = [
-  { label: "What we do", href: "#capabilities" },
-  { label: "Where we work", href: "#network" },
-  { label: "Our method", href: "#method" },
-  { label: "About", href: "#responsibility" },
+  ["/", "The Firm"],
+  ["/expertise", "Our Expertise"],
+  ["/network", "Global Network"],
+  ["/outreach", "Outreach"],
+  ["/approach", "Our Approach"],
 ];
-
-export function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+export function Header({ outreachAuthenticated = false }: { outreachAuthenticated?: boolean }) {
+  const path = usePathname();
+  const [open, setOpen] = useState(false);
   return (
-    <header className="site-header">
-      <div className="container header-inner">
-        <a className="wordmark" href="#top" aria-label="Influence Rock, back to top">
-          INFLUENCE ROCK
-        </a>
-        <nav className={`header-nav ${menuOpen ? "is-open" : ""}`} aria-label="Primary navigation">
-          {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
-              {link.label}
-            </a>
+    <header id="header" className={path === "/" ? "on-dark" : ""}>
+      <div className="header-inner">
+        <Link href="/" className="brand" onClick={() => setOpen(false)}>
+          <span className="brand-mark">
+            IR
+            <span />
+          </span>
+          <span className="brand-name">
+            INFLUENCE ROCK<span>INTERNATIONAL RELATIONS</span>
+          </span>
+        </Link>
+        <nav className={`desktop-nav ${outreachNav.navigation}`} aria-label="Main navigation">
+          {links.map(([href, label]) => (
+            <Link
+              key={href}
+              href={href}
+              className={path === href ? "active" : ""}
+            >
+              {label}
+            </Link>
           ))}
-          <a className="mobile-consultation" href="#consultation" onClick={() => setMenuOpen(false)}>
-            Confidential consultation <ArrowRight size={17} weight="light" />
-          </a>
         </nav>
-        <a className="header-cta" href="#consultation">
-          Confidential consultation <ArrowRight size={17} weight="light" />
-        </a>
-        <button
-          className="menu-toggle"
-          type="button"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          {menuOpen ? <X size={24} /> : <List size={24} />}
-        </button>
+        <div className="header-actions">
+          {outreachAuthenticated && path === "/outreach" ? (
+            <form action={signOut}>
+              <button className="button nav-button" type="submit">Sign out</button>
+            </form>
+          ) : (
+            <Link className="button nav-button" href="/contact">
+              Begin a Conversation
+            </Link>
+          )}
+          <button
+            className={`menu-button ${outreachNav.menu}`}
+            aria-label={open ? "Close navigation" : "Open navigation"}
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
+            onClick={() => setOpen(!open)}
+          >
+            <Icon name={open ? "close" : "menu"} />
+          </button>
+        </div>
       </div>
+      <nav
+        id="mobile-navigation"
+        className="mobile-nav"
+        aria-label="Mobile navigation"
+        hidden={!open}
+      >
+        {[...links, ["/contact", "Begin a Conversation"]].map(
+          ([href, label]) => (
+            <Link key={href} href={href} onClick={() => setOpen(false)}>
+              {label}
+            </Link>
+          ),
+        )}
+        {outreachAuthenticated && path === "/outreach" && (
+          <form action={signOut}>
+            <button className="button" type="submit">Sign out</button>
+          </form>
+        )}
+      </nav>
     </header>
   );
 }

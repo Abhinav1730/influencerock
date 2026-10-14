@@ -1,0 +1,16 @@
+[Unit]
+Description=Influence Rock 1 enquiry retention
+
+[Service]
+Type=oneshot
+User=influencerock-1
+Group=influencerock-1
+WorkingDirectory=/srv/influencerock-1-current
+Environment=IR_DATA_DIR=/srv/influencerock-1/data
+ExecStart=/usr/bin/node --conditions=react-server --import tsx scripts/retention.ts
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/influencerock-1/data
+UMask=0077

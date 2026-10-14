@@ -1,5 +1,34 @@
-node_modules/
-.next/
+# Build outputs and installed dependencies
+node_modules
+.next
 out/
+dist/
 *.tsbuildinfo
-.env*.local
+.sites-runtime/
+
+# Private runtime storage and credentials
+data/
+original-assets/press-contacts.json
+.env*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pem
+*.key
+auth.json
+credentials*.json
+*private-key*
+
+# Local verification, archives and generated working material
+review/
+qa/
+test-results/
+playwright-report/
+coverage/
+backups/
+*.log
+*.bak
+*.backup
+.worktrees/

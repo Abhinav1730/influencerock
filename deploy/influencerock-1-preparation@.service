@@ -1,0 +1,29 @@
+[Unit]
+Description=Influence Rock request preparation worker %i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=influencerock-1
+Group=influencerock-1
+WorkingDirectory=/srv/influencerock-1-current
+EnvironmentFile=/etc/influencerock-1-agent.env
+Environment=NODE_ENV=production
+Environment=IR_WORKER_ID=%i
+ExecStart=/usr/bin/node --conditions=react-server --import tsx scripts/pipeline-worker.ts prepare
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=270
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/influencerock-1/data /var/lib/influencerock-agent
+IPAddressAllow=127.0.0.53/32
+IPAddressDeny=127.0.0.0/8 ::1/128 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16 169.254.0.0/16 fc00::/7
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

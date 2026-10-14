@@ -1,0 +1,17 @@
+import assert from "node:assert/strict";
+import { passwordHash, passwordMatches, createSession, validSession, SESSION_SECONDS } from "../lib/server/outreach-session";
+const secret = "a".repeat(64);
+const now = 1800000000000;
+const hash = passwordHash("test-password");
+assert(passwordMatches("test-password", hash));
+assert(!passwordMatches("wrong", hash));
+assert(!passwordMatches("test-password", ""));
+const token = createSession(secret, now);
+assert(validSession(token, secret, now));
+assert(!validSession(token, secret, now + SESSION_SECONDS * 1000));
+assert(!validSession(token, "b".repeat(64), now));
+assert(!validSession(token + "x", secret, now));
+assert(!validSession(token + ".extra", secret, now));
+assert(!validSession(undefined, secret, now));
+assert(!validSession(token, "", now));
+console.log("Outreach password verification, signed sessions, expiry and tamper checks passed.");

@@ -1,26 +1,43 @@
 {
   "name": "influence-rock",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --hostname 0.0.0.0",
+    "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
-    "start": "next start --hostname 0.0.0.0",
-    "typecheck": "tsc --noEmit"
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "next typegen && tsc --noEmit",
+    "check": "tsx scripts/check.ts",
+    "check:api": "tsx scripts/check-api.ts",
+    "profiles:generate": "tsx scripts/generate-profiles.ts",
+    "retention": "node --conditions=react-server --import tsx scripts/retention.ts",
+    "check:admin-workspace": "node --conditions=react-server --import tsx scripts/check-admin-workspace.ts",
+    "check:admin-login": "node --conditions=react-server --import tsx scripts/check-admin-login.ts",
+    "check:pipeline": "node --conditions=react-server --import tsx scripts/check-pipeline.ts",
+    "check:pipeline-api": "node --conditions=react-server --import tsx scripts/check-pipeline-api.ts",
+    "worker:prepare": "node --conditions=react-server --import tsx scripts/pipeline-worker.ts prepare",
+    "worker:send": "node --conditions=react-server --import tsx scripts/pipeline-worker.ts send",
+    "import:historical": "node --conditions=react-server --import tsx scripts/import-historical.ts",
+    "check:pipeline-processes": "node --conditions=react-server --import tsx scripts/check-pipeline-processes.ts",
+    "import:meeting-history": "node --conditions=react-server --import tsx scripts/import-meeting-history.ts"
   },
   "dependencies": {
-    "@fontsource/cormorant-garamond": "^5.2.8",
-    "@fontsource/dm-sans": "^5.2.8",
-    "@phosphor-icons/react": "^2.1.7",
-    "next": "16.4.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
-    "@types/node": "^24.0.0",
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0",
-    "playwright-core": "^1.63.0",
-    "typescript": "^5.9.0"
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "prettier": "^3.9.9",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }

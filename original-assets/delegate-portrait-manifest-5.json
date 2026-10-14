@@ -1,0 +1,176 @@
+{
+  "model": "bytedance-seed/seedream-5-0-lite",
+  "previousProjectChargeUSD": 21.315,
+  "totalCapUSD": 22.315,
+  "batchChargeUSD": 0.28,
+  "portraits": [
+    {
+      "profileId": "SG-1",
+      "countryCode": "SG",
+      "country": "Singapore",
+      "name": "Jun Wei Lim",
+      "gender": "Male",
+      "group": "southeast-asia",
+      "prompt": "Editorial environmental photograph of one explicitly fictional 36-year-old male international relations professional from Singapore, Singaporean Chinese heritage. Individual facial anatomy: angular face, wide-set dark eyes. Hair: short textured black hair. Clothing: navy knit polo and linen overshirt. Setting: Singapore riverside terrace. Expression: confident half-smile. Attractive, polished and approachable adult, authentic individual facial proportions, realistic skin texture and natural asymmetry. Tasteful professional styling. Chest-up vertical portrait, complete head and shoulders with comfortable headroom. Natural light, full color, subtle depth of field. Distinct original imagined person. No celebrity likeness, other people, logos, lettering, watermark, collage, matching suits, standardized gray studio backdrop or exaggerated beauty smoothing.",
+      "seed": 61049806,
+      "image": "/assets/portraits/individual/sg-1-20261013.webp",
+      "traits": {
+        "age": "36",
+        "heritage": "Singaporean Chinese heritage",
+        "face": "angular face, wide-set dark eyes",
+        "hair": "short textured black hair",
+        "clothes": "navy knit polo and linen overshirt",
+        "setting": "Singapore riverside terrace",
+        "expression": "confident half-smile"
+      },
+      "costUSD": 0.035
+    },
+    {
+      "profileId": "SG-2",
+      "countryCode": "SG",
+      "country": "Singapore",
+      "name": "Daniel Tan",
+      "gender": "Male",
+      "group": "southeast-asia",
+      "prompt": "Editorial environmental photograph of one explicitly fictional 43-year-old male international relations professional from Singapore, Singaporean Malay heritage. Individual facial anatomy: oval face, warm brown skin, strong nose. Hair: short wavy black hair, subtle stubble. Clothing: forest-green casual jacket, ivory shirt. Setting: warm wood Singapore workspace with plants. Expression: warm open smile. Attractive, polished and approachable adult, authentic individual facial proportions, realistic skin texture and natural asymmetry. Tasteful professional styling. Chest-up vertical portrait, complete head and shoulders with comfortable headroom. Natural light, full color, subtle depth of field. Distinct original imagined person. No celebrity likeness, other people, logos, lettering, watermark, collage, matching suits, standardized gray studio backdrop or exaggerated beauty smoothing.",
+      "seed": 1433694645,
+      "image": "/assets/portraits/individual/sg-2-20261013.webp",
+      "traits": {
+        "age": "43",
+        "heritage": "Singaporean Malay heritage",
+        "face": "oval face, warm brown skin, strong nose",
+        "hair": "short wavy black hair, subtle stubble",
+        "clothes": "forest-green casual jacket, ivory shirt",
+        "setting": "warm wood Singapore workspace with plants",
+        "expression": "warm open smile"
+      },
+      "costUSD": 0.035
+    },
+    {
+      "profileId": "SG-3",
+      "countryCode": "SG",
+      "country": "Singapore",
+      "name": "Hui Min Ng",
+      "gender": "Female",
+      "group": "southeast-asia",
+      "prompt": "Editorial environmental photograph of one explicitly fictional 31-year-old female international relations professional from Singapore, Singaporean Chinese heritage. Individual facial anatomy: beautiful oval face, rounded cheeks, dark almond eyes. Hair: shoulder-length black waves. Clothing: elegant plum blouse, small earrings. Setting: lush Singapore botanic garden walkway. Expression: bright welcoming smile. Attractive, polished and approachable adult, authentic individual facial proportions, realistic skin texture and natural asymmetry. Tasteful professional styling. Chest-up vertical portrait, complete head and shoulders with comfortable headroom. Natural light, full color, subtle depth of field. Distinct original imagined person. No celebrity likeness, other people, logos, lettering, watermark, collage, matching suits, standardized gray studio backdrop or exaggerated beauty smoothing.",
+      "seed": 824581680,
+      "image": "/assets/portraits/individual/sg-3-20261013.webp",
+      "traits": {
+        "age": "31",
+        "heritage": "Singaporean Chinese heritage",
+        "face": "beautiful oval face, rounded cheeks, dark almond eyes",
+        "hair": "shoulder-length black waves",
+        "clothes": "elegant plum blouse, small earrings",
+        "setting": "lush Singapore botanic garden walkway",
+        "expression": "bright welcoming smile"
+      },
+      "costUSD": 0.035
+    },
+    {
+      "profileId": "SG-4",
+      "countryCode": "SG",
+      "country": "Singapore",
+      "name": "Cheryl Lee",
+      "gender": "Female",
+      "group": "southeast-asia",
+      "prompt": "Editorial environmental photograph of one explicitly fictional 35-year-old female international relations professional from Singapore, Singaporean Indian Tamil heritage. Individual facial anatomy: beautiful heart-shaped face, warm brown skin, full eyebrows. Hair: long dark hair loosely tied back. Clothing: tasteful teal blouse, delicate gold earrings. Setting: sunlit Singapore lounge with cream walls and greenery. Expression: gentle asymmetric smile. Attractive, polished and approachable adult, authentic individual facial proportions, realistic skin texture and natural asymmetry. Tasteful professional styling. Chest-up vertical portrait, complete head and shoulders with comfortable headroom. Natural light, full color, subtle depth of field. Distinct original imagined person. No celebrity likeness, other people, logos, lettering, watermark, collage, matching suits, standardized gray studio backdrop or exaggerated beauty smoothing.",
+      "seed": 608689687,
+      "image": "/assets/portraits/individual/sg-4-20261013.webp",
+      "traits": {
+        "age": "35",
+        "heritage": "Singaporean Indian Tamil heritage",
+        "face": "beautiful heart-shaped face, warm brown skin, full eyebrows",
+        "hair": "long dark hair loosely tied back",
+        "clothes": "tasteful teal blouse, delicate gold earrings",
+        "setting": "sunlit Singapore lounge with cream walls and greenery",
+        "expression": "gentle asymmetric smile"
+      },
+      "costUSD": 0.035
+    },
+    {
+      "profileId": "CH-1",
+      "countryCode": "CH",
+      "country": "Switzerland",
+      "name": "Lukas Keller",
+      "gender": "Male",
+      "group": "europe",
+      "prompt": "Editorial environmental photograph of one explicitly fictional 40-year-old male international relations professional from Switzerland, Swiss German heritage. Individual facial anatomy: square jaw, hazel eyes, broad nose. Hair: short dark blond hair, gray temples. Clothing: charcoal knit sweater, pale-blue collared shirt. Setting: Bern cafe terrace with blurred historic buildings. Expression: friendly relaxed smile. Attractive, polished and approachable adult, authentic individual facial proportions, realistic skin texture and natural asymmetry. Tasteful professional styling. Chest-up vertical portrait, complete head and shoulders with comfortable headroom. Natural light, full color, subtle depth of field. Distinct original imagined person. No celebrity likeness, other people, logos, lettering, watermark, collage, matching suits, standardized gray studio backdrop or exaggerated beauty smoothing.",
+      "seed": 2034639728,
+      "image": "/assets/portraits/individual/ch-1-20261013.webp",
+      "traits": {
+        "age": "40",
+        "heritage": "Swiss German heritage",
+        "face": "square jaw, hazel eyes, broad nose",
+        "hair": "short dark blond hair, gray temples",
+        "clothes": "charcoal knit sweater, pale-blue collared shirt",
+        "setting": "Bern cafe terrace with blurred historic buildings",
+        "expression": "friendly relaxed smile"
+      },
+      "costUSD": 0.035
+    },
+    {
+      "profileId": "CH-2",
+      "countryCode": "CH",
+      "country": "Switzerland",
+      "name": "Matteo Meier",
+      "gender": "Male",
+      "group": "europe",
+      "prompt": "Editorial environmental photograph of one explicitly fictional 34-year-old male international relations professional from Switzerland, Swiss Italian heritage. Individual facial anatomy: long oval face, olive skin, deep brown eyes. Hair: wavy medium brown hair, light stubble. Clothing: sand linen jacket and white shirt. Setting: Lugano office balcony with soft hills. Expression: thoughtful half-smile. Attractive, polished and approachable adult, authentic individual facial proportions, realistic skin texture and natural asymmetry. Tasteful professional styling. Chest-up vertical portrait, complete head and shoulders with comfortable headroom. Natural light, full color, subtle depth of field. Distinct original imagined person. No celebrity likeness, other people, logos, lettering, watermark, collage, matching suits, standardized gray studio backdrop or exaggerated beauty smoothing.",
+      "seed": 1460920415,
+      "image": "/assets/portraits/individual/ch-2-20261013.webp",
+      "traits": {
+        "age": "34",
+        "heritage": "Swiss Italian heritage",
+        "face": "long oval face, olive skin, deep brown eyes",
+        "hair": "wavy medium brown hair, light stubble",
+        "clothes": "sand linen jacket and white shirt",
+        "setting": "Lugano office balcony with soft hills",
+        "expression": "thoughtful half-smile"
+      },
+      "costUSD": 0.035
+    },
+    {
+      "profileId": "CH-3",
+      "countryCode": "CH",
+      "country": "Switzerland",
+      "name": "Lea Steiner",
+      "gender": "Female",
+      "group": "europe",
+      "prompt": "Editorial environmental photograph of one explicitly fictional 30-year-old female international relations professional from Switzerland, Swiss German heritage. Individual facial anatomy: beautiful diamond-shaped face, green eyes, faint freckles. Hair: chin-length honey-blond bob. Clothing: elegant burgundy blouse, silver earrings. Setting: airy Zurich creative workspace. Expression: warm confident smile. Attractive, polished and approachable adult, authentic individual facial proportions, realistic skin texture and natural asymmetry. Tasteful professional styling. Chest-up vertical portrait, complete head and shoulders with comfortable headroom. Natural light, full color, subtle depth of field. Distinct original imagined person. No celebrity likeness, other people, logos, lettering, watermark, collage, matching suits, standardized gray studio backdrop or exaggerated beauty smoothing.",
+      "seed": 98458671,
+      "image": "/assets/portraits/individual/ch-3-20261013.webp",
+      "traits": {
+        "age": "30",
+        "heritage": "Swiss German heritage",
+        "face": "beautiful diamond-shaped face, green eyes, faint freckles",
+        "hair": "chin-length honey-blond bob",
+        "clothes": "elegant burgundy blouse, silver earrings",
+        "setting": "airy Zurich creative workspace",
+        "expression": "warm confident smile"
+      },
+      "costUSD": 0.035
+    },
+    {
+      "profileId": "CH-4",
+      "countryCode": "CH",
+      "country": "Switzerland",
+      "name": "Chiara Baumann",
+      "gender": "Female",
+      "group": "europe",
+      "prompt": "Editorial environmental photograph of one explicitly fictional 36-year-old female international relations professional from Switzerland, Swiss Italian heritage. Individual facial anatomy: beautiful soft oval face, olive complexion, brown eyes. Hair: shoulder-length chestnut waves. Clothing: ivory knit top, unstructured blue jacket. Setting: Lausanne lakeside terrace with blurred Lake Geneva. Expression: bright friendly smile. Attractive, polished and approachable adult, authentic individual facial proportions, realistic skin texture and natural asymmetry. Tasteful professional styling. Chest-up vertical portrait, complete head and shoulders with comfortable headroom. Natural light, full color, subtle depth of field. Distinct original imagined person. No celebrity likeness, other people, logos, lettering, watermark, collage, matching suits, standardized gray studio backdrop or exaggerated beauty smoothing.",
+      "seed": 1332667915,
+      "image": "/assets/portraits/individual/ch-4-20261013.webp",
+      "traits": {
+        "age": "36",
+        "heritage": "Swiss Italian heritage",
+        "face": "beautiful soft oval face, olive complexion, brown eyes",
+        "hair": "shoulder-length chestnut waves",
+        "clothes": "ivory knit top, unstructured blue jacket",
+        "setting": "Lausanne lakeside terrace with blurred Lake Geneva",
+        "expression": "bright friendly smile"
+      },
+      "costUSD": 0.035
+    }
+  ]
+}
